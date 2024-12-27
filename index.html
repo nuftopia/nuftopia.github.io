@@ -29,13 +29,23 @@
       object-fit: cover; 
     }
 
+	#circle0 {
+      position: absolute;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%) rotate(0deg); 
+      animation: rotationLeft 30s linear infinite; 
+      width: 1000px; 
+      height: auto; 
+  
+    }
     #circle1 {
       position: absolute;
       top: 50%; 
       left: 50%; 
       transform: translate(-50%, -50%) rotate(0deg); 
-      animation: rotationLeft 2s linear infinite; 
-      width: 1000px; 
+      animation: rotationLeft 28.5s linear infinite; 
+      width: 800px; 
       height: auto; 
   
     }
@@ -44,35 +54,35 @@
       top: 50%; 
       left: 50%; 
       transform: translate(-50%, -50%) rotate(0deg); 
-      animation: rotationRight 4s linear infinite; 
-      width: 850px; 
+      animation: rotationLeft 27s linear infinite; 
+      width: 625px; 
       height: auto; 
     }
     #circle3 {
       position: absolute;
       top: 50%; 
       left: 50%; 
-      transform: translate(-50%, -50%) rotate(-180deg); 
-      animation: rotationLeft 6s linear infinite; 
-      width: 650px; 
+      transform: translate(-50%, -50%) rotate(0deg); 
+      animation: rotationLeft 25.5s linear infinite; 
+      width: 475px; 
       height: auto; 
     }
      #circle4 {
       position: absolute;
       top: 50%; 
       left: 50%; 
-      transform: translate(-50%, -50%) rotate(180deg); 
-      animation: rotationRight 8s linear infinite; 
-      width: 450px; 
+      transform: translate(-50%, -50%) rotate(0deg); 
+      animation: rotationLeft 24s linear infinite; 
+      width: 350px; 
       height: auto; 
     }
      #circle5 {
       position: absolute;
       top: 50%; 
       left: 50%; 
-      transform: translate(-50%, -50%) rotate(225deg); 
-      animation: rotationLeft 10s linear infinite; 
-      width: 250px; 
+      transform: translate(-50%, -50%) rotate(0deg); 
+      animation: rotationLeft 22.5s linear infinite; 
+      width: 150px; 
       height: auto; 
     }
      @keyframes rotationRight {
@@ -88,11 +98,13 @@
 </head>
 <body>
   <img id="background" src="Invierno_horizontal_2.jpg" alt="Background Image"> 
+  <img id="circle0" src="circle.png" alt="circle1"> 
   <img id="circle1" src="circle.png" alt="circle1"> 
   <img id="circle2" src="circle.png" alt="circle2"> 
   <img id="circle3" src="circle.png" alt="circle3"> 
   <img id="circle4" src="circle.png" alt="circle4"> 
   <img id="circle5" src="circle.png" alt="circle5"> 
+
  
   
 </body>
