@@ -29,58 +29,41 @@
       object-fit: cover; 
     }
 
-	#circle0 {
-      position: absolute;
+    .circle-position {
+    position: absolute;
       top: 50%; 
       left: 50%; 
       transform: translate(-50%, -50%) rotate(0deg); 
+    }
+
+	#circle0 {
       animation: rotationLeft 60s linear infinite; 
       width: 1000px; 
       height: auto; 
   
     }
     #circle1 {
-      position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%) rotate(0deg); 
       animation: rotationLeft 55s linear infinite; 
       width: 800px; 
       height: auto; 
   
     }
     #circle2 {
-      position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%) rotate(0deg); 
       animation: rotationLeft 44.5s linear infinite; 
       width: 625px; 
       height: auto; 
     }
     #circle3 {
-      position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%) rotate(0deg); 
       animation: rotationLeft 35.5s linear infinite; 
       width: 475px; 
       height: auto; 
     }
      #circle4 {
-      position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%) rotate(0deg); 
       animation: rotationLeft 28s linear infinite; 
       width: 350px; 
       height: auto; 
     }
      #circle5 {
-      position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%) rotate(0deg); 
       animation: rotationLeft 22s linear infinite; 
       width: 250px; 
       height: auto; 
@@ -98,12 +81,12 @@
 </head>
 <body>
   <img id="background" src="Invierno_horizontal_2.jpg" alt="Background Image"> 
-  <img id="circle0" src="circle.png" alt="circle0"> 
-  <img id="circle1" src="circle.png" alt="circle1"> 
-  <img id="circle2" src="circle.png" alt="circle2"> 
-  <img id="circle3" src="circle.png" alt="circle3"> 
-  <img id="circle4" src="circle.png" alt="circle4"> 
-  <img id="circle5" src="circle.png" alt="circle5"> 
+  <img id="circle0" class="circle-position" src="circle.png" alt="circle0"> 
+  <img id="circle1" class="circle-position"src="circle.png" alt="circle1"> 
+  <img id="circle2" class="circle-position"src="circle.png" alt="circle2"> 
+  <img id="circle3" class="circle-position"src="circle.png" alt="circle3"> 
+  <img id="circle4" class="circle-position"src="circle.png" alt="circle4"> 
+  <img id="circle5" class="circle-position"src="circle.png" alt="circle5"> 
 
  
   
