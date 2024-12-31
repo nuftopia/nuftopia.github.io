@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
-        rel="icon" type="image/x-icon" />
+  <link
+    href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
+    rel="icon" type="image/x-icon" />
 
   <title>Luciana Figuera Navarro</title>
 
@@ -17,79 +18,81 @@
       align-items: center;
     }
 
-    img {
-      position: absolute; 
-    }
-
     #background {
-      top: 0; 
-      left: 0; 
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 100vh; 
-      object-fit: cover; 
+      height: 100vh;
+      object-fit: cover;
     }
 
     .circle-position {
-    position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%) rotate(0deg); 
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: auto;
     }
 
-	#circle0 {
-      animation: rotationLeft 60s linear infinite; 
-      width: 1000px; 
-      height: auto; 
-  
+    #circle0 {
+      animation: rotationLeft 60s linear infinite;
+      width: 1000px;
     }
+
     #circle1 {
-      animation: rotationLeft 55s linear infinite; 
-      width: 800px; 
-      height: auto; 
-  
+      animation: rotationLeft 55s linear infinite;
+      width: 800px;
     }
+
     #circle2 {
-      animation: rotationLeft 44.5s linear infinite; 
-      width: 625px; 
-      height: auto; 
+      animation: rotationLeft 44.5s linear infinite;
+      width: 625px;
     }
+
     #circle3 {
-      animation: rotationLeft 35.5s linear infinite; 
-      width: 475px; 
-      height: auto; 
+      animation: rotationLeft 35.5s linear infinite;
+      width: 475px;
     }
-     #circle4 {
-      animation: rotationLeft 28s linear infinite; 
-      width: 350px; 
-      height: auto; 
+
+    #circle4 {
+      animation: rotationLeft 28s linear infinite;
+      width: 350px;
     }
-     #circle5 {
-      animation: rotationLeft 22s linear infinite; 
-      width: 250px; 
-      height: auto; 
+
+    #circle5 {
+      animation: rotationLeft 22s linear infinite;
+      width: 250px;
     }
-     @keyframes rotationRight {
-      from {transform: translate(-50%, -50%) rotate(0deg);}
-      to {transform: translate(-50%, -50%) rotate(360deg);}
-  	}	
-     @keyframes rotationLeft {
-      from {transform: translate(-50%, -50%) rotate(0deg);}
-      to {transform: translate(-50%, -50%) rotate(-360deg);}
-    } 
-    	
+
+    @keyframes rotationRight {
+      from {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    @keyframes rotationLeft {
+      from {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+      }
+    }
   </style>
 </head>
-<body>
-  <img id="background" src="Invierno_horizontal_2.jpg" alt="Background Image"> 
-  <img id="circle0" class="circle-position" src="circle.png" alt="circle0"> 
-  <img id="circle1" class="circle-position"src="circle.png" alt="circle1"> 
-  <img id="circle2" class="circle-position"src="circle.png" alt="circle2"> 
-  <img id="circle3" class="circle-position"src="circle.png" alt="circle3"> 
-  <img id="circle4" class="circle-position"src="circle.png" alt="circle4"> 
-  <img id="circle5" class="circle-position"src="circle.png" alt="circle5"> 
 
- 
-  
+<body>
+  <img id="background" src="images/Invierno_horizontal_2.jpg" alt="Background Image">
+  <img id="circle0" class="circle-position" src="images/circle.png" alt="circle0">
+  <img id="circle1" class="circle-position" src="images/circle.png" alt="circle1">
+  <img id="circle2" class="circle-position" src="images/circle.png" alt="circle2">
+  <img id="circle3" class="circle-position" src="images/circle.png" alt="circle3">
+  <img id="circle4" class="circle-position" src="images/circle.png" alt="circle4">
+  <img id="circle5" class="circle-position" src="images/circle.png" alt="circle5">
 </body>
 
 </html>
