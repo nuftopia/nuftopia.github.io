@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>Shapes</title>
+
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img1 {
+      width: 600px;
+      height: 600px;
+      clip-path: url(#mask1);
+    }
+
+    .svg1 rect {
+      x: 100px;
+      y: 100px;
+      width: 200px;
+      height: 100px;
+      transform: rotate(10deg);
+    }
+  </style>
+</head>
+
+<body>
+  <img class="img1" src="images/Brazos.jpg" />
+
+  <svg class="svg1">
+    <clipPath id="mask1">                                                             
+      <rect />
+    </clipPath>
+  </svg>
+</body>
+
+</html>
