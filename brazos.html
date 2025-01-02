@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 
 <head>
 
@@ -10,30 +11,60 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: blue;
     }
 
+    .container {
+      position: relative;
+    }
+
+    .container img {
+      position: absolute;
+    }
+
+    .container .bg {
+      opacity: .5;
+    }
+
+    /* multiply by number of images */
     .img1 {
-      width: 600px;
-      height: 600px;
       clip-path: url(#mask1);
     }
-
-    .svg1 rect {
-      x: 100px;
-      y: 100px;
-      width: 200px;
-      height: 100px;
-      transform: rotate(10deg);
+    .img2 {
+      clip-path: url(#mask2);
+    }
+    .img3 {
+      clip-path: url(#mask3);
     }
   </style>
 </head>
 
 <body>
-  <img class="img1" src="images/Brazos.jpg" />
-
-  <svg class="svg1">
-    <clipPath id="mask1">                                                             
-      <rect />
+  <!-- <div class="container">
+    <img class="bg" src="images/brazos.jpg" />
+    <img class="img1" src="images/brazos.jpg" />
+  </div> -->
+  <!-- <div class="container">
+    <img class="bg" src="images/brazos.jpg" />
+    <img class="img22" src="images/brazos.jpg" />
+  </div> -->
+  <div class="container">
+    <img class="bg" src="images/brazos.jpg" />
+    <img class="img3" src="images/brazos.jpg" />
+  </div>
+  <!-- <svg class="polygon1">
+    <clipPath id="mask1">
+      <polygon points="655,429 860,318 860,550 657,660" />
+    </clipPath>
+  </svg> -->
+  <!-- <svg class="polygon2">
+    <clipPath id="mask2">
+      <polygon points="1080,421 881,310 881,548 1089,664" />
+    </clipPath>
+  </svg> -->
+  <svg class="polygon3">
+    <clipPath id="mask3">
+      <polygon points="660,689 881,310 881,548 1089,664" />
     </clipPath>
   </svg>
 </body>
