@@ -28,44 +28,60 @@
 
     /* multiply by number of images */
     .img1 {
-      clip-path: url(#mask1);
+      mask-image: url(#mask1);
     }
-    .img2 {
-      clip-path: url(#mask2);
+
+    #mask1 .path1 {
+      translate: 655px 429px;
     }
-    .img3 {
-      clip-path: url(#mask3);
+
+    #mask1 .path2 {
+      transform: scale(-1, 1);
+      transform: rotate(119deg);
+      translate: 1083px 425px;
+    }
+
+    #mask1 .path3 {
+      transform: rotate(58deg);
+      translate: 871px 560px;
+    }
+
+    #mask1 .path4 {
+      transform: scale(-1, 1);
+      transform: rotate(119deg);
+      translate: 861px 812px;
+    }
+
+    #mask1 .path5 {
+      translate: 881px 802px;
+    }
+    #mask1 .path6 {
+      transform: scale(-1, 1);
+      transform: rotate(117deg);
+      translate: 1315px 801px;
+    }
+    svg path {
+      fill: #fff;
     }
   </style>
 </head>
 
 <body>
-  <!-- <div class="container">
-    <img class="bg" src="images/brazos.jpg" />
-    <img class="img1" src="images/brazos.jpg" />
-  </div> -->
-  <!-- <div class="container">
-    <img class="bg" src="images/brazos.jpg" />
-    <img class="img22" src="images/brazos.jpg" />
-  </div> -->
   <div class="container">
     <img class="bg" src="images/brazos.jpg" />
-    <img class="img3" src="images/brazos.jpg" />
+    <img class="img1" src="images/brazos.jpg" />
   </div>
-  <!-- <svg class="polygon1">
-    <clipPath id="mask1">
-      <polygon points="655,429 860,318 860,550 657,660" />
-    </clipPath>
-  </svg> -->
-  <!-- <svg class="polygon2">
-    <clipPath id="mask2">
-      <polygon points="1080,421 881,310 881,548 1089,664" />
-    </clipPath>
-  </svg> -->
-  <svg class="polygon3">
-    <clipPath id="mask3">
-      <polygon points="660,689 881,310 881,548 1089,664" />
-    </clipPath>
+  <svg>
+    <defs>
+      <mask id="mask1">
+        <path class="path1" d="M0,0 l207,-112 l0,231 l-203,119" />
+        <path class="path2" fill="#fff" d="M0,0 l207,-118 l0,230 l-205,119" />
+        <path class="path3" fill="#fff" d="M0,0 l207,-112 l0,236 l-208,125" />
+        <path class="path4" fill="#fff" d="M0,6 l209,-118 l0,231 l-201,118" />
+        <path class="path5" fill="#fff" d="M0,15 l198,-119 l7,236 l-199,115" />
+        <path class="path6" fill="#fff" d="M0,10 l208,-129 l0,237 l-204,120" />
+      </mask>
+    </defs>
   </svg>
 </body>
 
