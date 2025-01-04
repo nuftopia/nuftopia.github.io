@@ -11,7 +11,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: blue;
+      /* background-color: blue; */
     }
 
     .container {
@@ -23,7 +23,7 @@
     }
 
     .container .bg {
-      opacity: .5;
+      opacity: 0.1;
     }
 
     /* multiply by number of images */
@@ -33,37 +33,137 @@
 
     #mask1 .path1 {
       translate: 655px 429px;
+      animation: hide 1s ease-in-out alternate infinite
     }
 
     #mask1 .path2 {
       transform: scale(-1, 1);
       transform: rotate(119deg);
       translate: 1083px 425px;
+      animation: hide 2s ease-in-out alternate infinite
     }
 
     #mask1 .path3 {
       transform: rotate(58deg);
       translate: 871px 560px;
+      animation: hide 0.5s ease-in-out alternate infinite
     }
 
     #mask1 .path4 {
       transform: scale(-1, 1);
-      transform: rotate(119deg);
+      transform: rotate(120deg);
       translate: 861px 812px;
+      animation: hide 1.5s ease-in-out alternate infinite
     }
 
     #mask1 .path5 {
       translate: 881px 802px;
+      animation: hide 1.5s ease-in-out alternate infinite
     }
 
     #mask1 .path6 {
       transform: scale(-1, 1);
       transform: rotate(117deg);
       translate: 1315px 801px;
+      animation: hide 1s ease-in-out alternate infinite
+    }
+
+    #mask1 .path7 {
+      transform: rotate(60deg);
+      translate: 659px 949px;
+      animation: hide 0.5s ease-in-out alternate infinite
+    }
+
+    #mask1 .path8 {
+      transform: rotate(58deg);
+      translate: 1108px 943px;
+      animation: hide 05s ease-in-out alternate infinite
+    }
+
+    #mask1 .path9 {
+      transform: rotate(57deg);
+      translate: 879px 1075px;
+      animation: hide 05s ease-in-out alternate infinite
+    }
+
+    #mask1 .path10 {
+      transform: scale(-1, 1);
+      transform: rotate(121deg);
+      translate: 873px 1324px;
+      animation: hide 1.5s ease-in-out alternate infinite
+    }
+
+    #mask1 .path11 {
+      translate: 887px 1310px;
+      animation: hide 1.5s ease-in-out alternate infinite
+    }
+
+    #mask1 .path12 {
+      transform: rotate(57deg);
+      translate: 1095px 1455px;
+      animation: hide 0.5s ease-in-out alternate infinite
+    }
+
+    #mask1 .path13 {
+      translate: 661px 1712px;
+      animation: hide 1s ease-in-out alternate infinite
+    }
+
+    #mask1 .path14 {
+      transform: scale(-1, 1);
+      transform: rotate(120deg);
+      translate: 1104px 1715px;
+      animation: hide 2s ease-in-out alternate infinite
     }
 
     svg path {
       fill: #fff;
+    }
+
+    @keyframes hide {
+      0% {
+        opacity: 1;
+      }
+
+      10% {
+        opacity: 0.9;
+      }
+
+      20% {
+        opacity: 0.8;
+      }
+
+      30% {
+        opacity: 0.7
+      }
+
+      40% {
+        opacity: 0.6
+      }
+
+      50% {
+        opacity: 0.5
+      }
+
+      60% {
+        opacity: 0.4;
+      }
+
+      70% {
+        opacity 0.3
+      }
+
+      80% {
+        opacity: 0.2;
+      }
+
+      90% {
+        opacity 0.1
+      }
+
+      100% {
+        opacity: 0
+      }
     }
   </style>
 </head>
@@ -76,12 +176,20 @@
   <svg>
     <defs>
       <mask id="mask1">
-        <path class="path1" d="M0,0 l207,-112 l0,231 l-203,119" />
-        <path class="path2" fill="#fff" d="M0,0 l207,-118 l0,230 l-205,119" />
-        <path class="path3" fill="#fff" d="M0,0 l207,-112 l0,236 l-208,125" />
-        <path class="path4" fill="#fff" d="M0,6 l209,-118 l0,231 l-201,118" />
-        <path class="path5" fill="#fff" d="M0,15 l198,-119 l7,236 l-199,115" />
-        <path class="path6" fill="#fff" d="M0,10 l208,-129 l0,237 l-204,120" />
+        <path class="path1" d="M0,0 l207,-112 l0,231 l-203,119" alt="brazo1" />
+        <path class="path2" fill="#fff" d="M0,0 l207,-118 l0,230 l-205,119" alt="brazo2" />
+        <path class="path3" fill="#fff" d="M0,0 l207,-112 l0,236 l-208,125" alt="brazo3" />
+        <path class="path4" fill="#fff" d="M0,6 l209,-126 l0,231 l-201,127" alt="brazo4" />
+        <path class="path5" fill="#fff" d="M0,15 l198,-119 l7,236 l-199,115" alt="brazo5" />
+        <path class="path6" fill="#fff" d="M0,10 l208,-129 l0,237 l-204,120" alt="brazo6" />
+        <path class="path7" fill="#fff" d="M0,0 l206,-112 l-5,236 l-205,126" alt="brazo7" />
+        <path class="path8" fill="#fff" d="M0,0 l207,-112 l-5,236 l-210,126" alt="brazo8" />
+        <path class="path9" fill="#fff" d="M0,0 l206,-112 l-5,236 l-210,111" alt="brazo9" />
+        <path class="path10" fill="#fff" d="M0,9 l210,-122 l0,231 l-201,123" alt="brazo10" />
+        <path class="path11" fill="#fff" d="M0,15 l198,-119 l7,236 l-199,115" alt="brazo11" />
+        <path class="path12" fill="#fff" d="M0,0 l206,-112 l-5,236 l-210,111" alt="brazo12" />
+        <path class="path13" fill="#fff" d="M0,0 l209,-119 l0,230 l-203,117" alt="brazo13" />
+        <path class="path14" fill="#fff" d="M0,16 l204,-119 l7,236 l-199,112" alt="brazo14" />
       </mask>
     </defs>
   </svg>
