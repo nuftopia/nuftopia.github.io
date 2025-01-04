@@ -31,6 +31,11 @@
       mask-image: url(#mask1);
     }
 
+    /* 1,6,13 = 1
+    2,14 - 0.75
+    4,5,10,11 = 0.25
+    3,7,8,9, 12 = 0.5 */
+
     #mask1 .path1 {
       translate: 655px 429px;
       animation: hide 1s ease-in-out alternate infinite
@@ -40,7 +45,7 @@
       transform: scale(-1, 1);
       transform: rotate(119deg);
       translate: 1083px 425px;
-      animation: hide 2s ease-in-out alternate infinite
+      animation: hide 0.75s ease-in-out alternate infinite
     }
 
     #mask1 .path3 {
@@ -53,12 +58,12 @@
       transform: scale(-1, 1);
       transform: rotate(120deg);
       translate: 861px 812px;
-      animation: hide 1.5s ease-in-out alternate infinite
+      animation: hide 0.25s ease-in-out alternate infinite
     }
 
     #mask1 .path5 {
       translate: 881px 802px;
-      animation: hide 1.5s ease-in-out alternate infinite
+      animation: hide 0.25s ease-in-out alternate infinite
     }
 
     #mask1 .path6 {
@@ -90,12 +95,12 @@
       transform: scale(-1, 1);
       transform: rotate(121deg);
       translate: 873px 1324px;
-      animation: hide 1.5s ease-in-out alternate infinite
+      animation: hide 0.25s ease-in-out alternate infinite
     }
 
     #mask1 .path11 {
       translate: 887px 1310px;
-      animation: hide 1.5s ease-in-out alternate infinite
+      animation: hide 0.25s ease-in-out alternate infinite
     }
 
     #mask1 .path12 {
@@ -113,7 +118,7 @@
       transform: scale(-1, 1);
       transform: rotate(120deg);
       translate: 1104px 1715px;
-      animation: hide 2s ease-in-out alternate infinite
+      animation: hide 0.75s ease-in-out alternate infinite
     }
 
     svg path {
