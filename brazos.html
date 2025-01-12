@@ -6,7 +6,6 @@
   <title>Brazos</title>
 
   <style>
-
     body {
       zoom: .4;
       margin: 0;
@@ -18,20 +17,10 @@
       text-align: center;
     }
 
-    /* multiply by number of images */
     .img1 {
-      /* transform-box: stroke-box;
-      transform-origin: top;
-      transform: scale(0.5); */
       mask-image: url(#mask1);
+      cursor: pointer
     }
-
-    /*
-      1,6,13     = 1
-      2,14       = 0.75
-      4,5,10,11  = 0.25
-      3,7,8,9,12 = 0.5
-    */
 
     #mask1 .path1 {
       translate: 655px 429px;
@@ -135,6 +124,10 @@
       fill: #fff;
     }
 
+    .no-animation #mask1 .path1 {
+      animation: none !important;
+    }
+
     @keyframes hide {
       0% {
         opacity: 1;
@@ -189,8 +182,7 @@
 
 <body>
   <div class="container">
-    <!-- <img class="bg" src="images/brazos.jpg" /> -->
-    <img class="img1" src="images/brazos.jpg" />
+    <img id="clickableElement" class="img1" src="images/brazos.jpg" />
   </div>
   <svg>
     <defs>
@@ -212,6 +204,13 @@
       </mask>
     </defs>
   </svg>
+  <script>
+    document.getElementById('clickableElement').addEventListener('click', function () {
+      const mask = document.getElementById('mask1');
+      mask.classList.toggle('no-animation');
+      console.log('no-animation class toggled:', mask.classList.contains('no-animation'));
+    });
+  </script>
 </body>
 
 </html>
