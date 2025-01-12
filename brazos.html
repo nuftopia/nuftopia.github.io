@@ -2,123 +2,133 @@
 <html>
 
 <head>
-
+  <meta content="width=640, initial-scale=0.47, maximum-scale=0.5, user-scalable=0" name="viewport">
   <title>Brazos</title>
 
   <style>
+
     body {
+      zoom: .4;
       margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* background-color: blue; */
     }
 
     .container {
-      position: relative;
-    }
-
-    .container img {
-      position: absolute;
-    }
-
-    .container .bg {
-      opacity: 0.1;
+      width: 100%;
+      overflow: auto;
+      text-align: center;
     }
 
     /* multiply by number of images */
     .img1 {
+      /* transform-box: stroke-box;
+      transform-origin: top;
+      transform: scale(0.5); */
       mask-image: url(#mask1);
     }
 
-    /* 1,6,13 = 1
-    2,14 - 0.75
-    4,5,10,11 = 0.25
-    3,7,8,9, 12 = 0.5 */
+    /*
+      1,6,13     = 1
+      2,14       = 0.75
+      4,5,10,11  = 0.25
+      3,7,8,9,12 = 0.5
+    */
 
     #mask1 .path1 {
       translate: 655px 429px;
-      animation: hide 1s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
     }
 
     #mask1 .path2 {
       transform: scale(-1, 1);
       transform: rotate(119deg);
       translate: 1083px 425px;
-      animation: hide 0.75s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 0.5s;
     }
 
     #mask1 .path3 {
       transform: rotate(58deg);
       translate: 871px 560px;
-      animation: hide 0.5s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 1s;
     }
 
     #mask1 .path4 {
       transform: scale(-1, 1);
       transform: rotate(120deg);
       translate: 861px 812px;
-      animation: hide 0.25s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 1.5s;
     }
 
     #mask1 .path5 {
       translate: 881px 802px;
-      animation: hide 0.25s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 2s;
     }
 
     #mask1 .path6 {
       transform: scale(-1, 1);
       transform: rotate(117deg);
       translate: 1315px 801px;
-      animation: hide 1s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 2.5s;
     }
 
     #mask1 .path7 {
       transform: rotate(60deg);
       translate: 659px 949px;
-      animation: hide 0.5s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 3s;
     }
 
     #mask1 .path8 {
       transform: rotate(58deg);
       translate: 1108px 943px;
-      animation: hide 0.5s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 3s;
     }
 
     #mask1 .path9 {
       transform: rotate(57deg);
       translate: 879px 1075px;
-      animation: hide 0.5s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 3.4s;
     }
 
     #mask1 .path10 {
       transform: scale(-1, 1);
       transform: rotate(121deg);
       translate: 873px 1324px;
-      animation: hide 0.25s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 4s;
     }
 
     #mask1 .path11 {
       translate: 887px 1310px;
-      animation: hide 0.25s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 4.5s;
     }
 
     #mask1 .path12 {
       transform: rotate(57deg);
       translate: 1095px 1455px;
-      animation: hide 0.5s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 5s;
     }
 
     #mask1 .path13 {
       translate: 661px 1712px;
-      animation: hide 1s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 5.5s;
     }
 
     #mask1 .path14 {
       transform: scale(-1, 1);
       transform: rotate(120deg);
       translate: 1104px 1715px;
-      animation: hide 0.75s ease-in-out alternate infinite
+      animation: hide 3s ease-in-out alternate infinite;
+      animation-delay: 6s;
     }
 
     svg path {
@@ -170,12 +180,16 @@
         opacity: 0
       }
     }
+
+    .otherstuff {
+      zoom: 50;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <img class="bg" src="images/brazos.jpg" />
+    <!-- <img class="bg" src="images/brazos.jpg" /> -->
     <img class="img1" src="images/brazos.jpg" />
   </div>
   <svg>
